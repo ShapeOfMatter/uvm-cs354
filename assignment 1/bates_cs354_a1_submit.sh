@@ -4,11 +4,11 @@
 # Request nodes
 #SBATCH --nodes=1
 # Request some processor cores
-#SBATCH --ntasks=4
+#SBATCH --ntasks=2
 # Request GPUs
 #SBATCH --gres=gpu:32
 # Request memory 
-#SBATCH --mem=32G
+#SBATCH --mem=16G
 # Maximum runtime of 10 minutes
 #SBATCH --time=59:00
 # Name of this job
