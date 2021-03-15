@@ -24,6 +24,6 @@ source ~/.bashrc
 cd ${SLURM_SUBMIT_DIR}
 
 # your job execution follows:
-source .venv
-time python ~/scratch/assignment1/bates_cs354_a1_train1.py
+source .venv/bin/activate
+time python "~/uvm-cs354/assignment 1/bates_cs354_a1_train1.py"
 
