@@ -34,6 +34,12 @@ def show_image(image, title):
     plt.title(title)
     plt.pause(0.001) # supposedly needed.
 
+def log(thing):
+    if isinstance(thing, str):
+        print(thing, flush=True)
+    else:
+        pprint(thing)
+
 def fetch_model(classes: int, *, pretrained=True, resume=False):
     model = torch.hub.load('pytorch/vision:v0.6.0', 'alexnet', pretrained=pretrained)
     model.classifier[6] = torch.nn.Linear(4096, classes)
