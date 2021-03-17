@@ -34,7 +34,7 @@ def show_image(image, title):
     plt.title(title)
     plt.pause(0.001) # supposedly needed.
 
-def log(thing):
+def logFL(thing):
     if isinstance(thing, str):
         print(thing, flush=True)
     else:
@@ -64,7 +64,7 @@ def train(model, batches, optimizer, criterion, epoch, device=LOCATION):
         loss.backward()
         optimizer.step()
         if batch_num % 5 == 0:
-            print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(epoch,
+            logFL('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(epoch,
                                                                            batch_num * len(data),  # wrong, batches are not the same size!
                                                                            len(batches.dataset),
                                                                            100. * batch_num / len(batches),
@@ -76,12 +76,12 @@ def test(model, batches, criterion, device=LOCATION):
         #(batch_num, (data, target)) = next(enumerate((d.to(device), t.to(device)) for (d, t) in batches))
         #image_grid = make_grid(data[:4], nrow=4)
         #show_image(image_grid, target[:4])
-        #pprint(model(data))
-        #pprint(target)
-        #pprint(criterion(model(data), target))
+        #logFL(model(data))
+        #logFL(target)
+        #logFL(criterion(model(data), target))
         #predicates = model(data).argmax(dim=1, keepdim=True)
-        #pprint(target.view_as(predicates))
-        #pprint(predicates.eq(target.view_as(predicates)))
+        #logFL(target.view_as(predicates))
+        #logFL(predicates.eq(target.view_as(predicates)))
         #input("anykey")
         def _test(data, target):
             result = model(data)
@@ -92,7 +92,7 @@ def test(model, batches, criterion, device=LOCATION):
                             for (data, target) in batches]
         loss = sum(l for (l, s) in losses_successes) / len(losses_successes)
         successes = sum(s for (l, s) in losses_successes)
-        print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(loss,
+        logFL('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(loss,
                                                                                      successes,
                                                                                      len(batches.dataset),
                                                                                      100. * successes / len(batches.dataset)))
@@ -133,8 +133,8 @@ def get_top_n_probabilities(output_vector, n):
     return {cid: prob.item() for (cid, prob) in zip(catids, probs)}
 
 def main():
-    print(f'Hello world! CUDA? {HAS_CUDA} Location? {LOCATION}')
-    print(f'gpus: {torch.cuda.device_count()}')
+    logFL(f'Hello world! CUDA? {HAS_CUDA} Location? {LOCATION}')
+    logFL(f'gpus: {torch.cuda.device_count()}')
     model = fetch_model(250)
     train_batch, test_batch = make_batches(SKETCHDIR, (90, 10), batch_size=60)
     learning_rate = 0.01
@@ -146,10 +146,10 @@ def main():
         if 0.1 > abs(loss - np.average(losses[-4:])):
             learning_rate *= 0.1
             optimizer, criterion = make_trainer(model, learning_rate=learning_rate, momentum=0.5)
-        print(learning_rate)
+        logFL(learning_rate)
         losses.append(loss)
         losses = losses[-10:]
-        pprint(losses)
+        logFL(losses)
     torch.save(model.state_dict(), MODEL_FILE)
     return model
 
