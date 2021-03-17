@@ -1,8 +1,8 @@
 .venv/
 .mypy_cache/
-assignment 1/sketch_subset
+assignment_1/sketch_subset
 __pycache__
 *.pt
-assignment 1/png_224x224.zip
+assignment_1/png_224x224.zip
 nogit/
 

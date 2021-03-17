@@ -13,3 +13,13 @@ pytorch install:
 pip install torch==1.8.0+cpu torchvision==0.9.0+cpu torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
 https://pytorch.org/get-started/locally/
 
+got: Collecting torch==1.8.0+cpu
+
+for deepgreen: 
+pip install torch torchvision torchaudio
+
+it's unclear where or how many dimensions there are to locating stuff. I think 'cpu' and 'cuda' might be exclusive options.
+
+
+Optimizer and criterion:
+https://kushaj.medium.com/training-alexnet-with-tips-and-checks-on-how-to-train-cnns-practical-cnns-in-pytorch-1-61daa679c74a
