@@ -43,13 +43,14 @@ def logFL(thing):
 def fetch_model(classes: int, *, pretrained=True, resume=False):
     model = torch.hub.load('pytorch/vision:v0.6.0', 'alexnet', pretrained=pretrained)
     model.classifier[6] = torch.nn.Linear(4096, classes)
-    if resume:
-        model.load_state_dict(torch.load(MODEL_FILE), strict=True)
     for param in model.features.parameters():
         param.requires_grad = False
     model.eval()
     model.to(LOCATION)
-    return torch.nn.DataParallel(model) if HAS_CUDA else model
+    parallel_model = torch.nn.DataParallel(model) if HAS_CUDA else model
+    if resume:
+        parallel_model.load_state_dict(torch.load(MODEL_FILE), strict=True)
+    return parallel_model
 
 def make_trainer(model, learning_rate=0.01, momentum=0.5, weight_decay=0.0005):
     return (optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum, weight_decay=weight_decay),
@@ -135,7 +136,7 @@ def get_top_n_probabilities(output_vector, n):
 def main():
     logFL(f'Hello world! CUDA? {HAS_CUDA} Location? {LOCATION}')
     logFL(f'gpus: {torch.cuda.device_count()}')
-    model = fetch_model(250)
+    model = fetch_model(250, resume=True)
     train_batch, test_batch = make_batches(SKETCHDIR, (90, 10), batch_size=60)
     learning_rate = 0.01
     optimizer, criterion = make_trainer(model, learning_rate=learning_rate, momentum=learning_rate * 50)
