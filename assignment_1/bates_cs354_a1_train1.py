@@ -138,19 +138,19 @@ def main():
     model = fetch_model(250)
     train_batch, test_batch = make_batches(SKETCHDIR, (90, 10), batch_size=60)
     learning_rate = 0.01
-    optimizer, criterion = make_trainer(model, learning_rate=learning_rate, momentum=0.5)
+    optimizer, criterion = make_trainer(model, learning_rate=learning_rate, momentum=learning_rate * 50)
     losses=[2]
     for epoch in range(100):
         train(model, train_batch, optimizer, criterion, epoch)
         loss = test(model, test_batch, criterion)
-        if 0.1 > abs(loss - np.average(losses[-4:])):
+        if 0.05 > abs( (loss - np.average(losses[-4:])) / loss ):
             learning_rate *= 0.1
-            optimizer, criterion = make_trainer(model, learning_rate=learning_rate, momentum=0.5)
+            optimizer, criterion = make_trainer(model, learning_rate=learning_rate, momentum=learning_rate * 50)
         logFL(learning_rate)
         losses.append(loss)
         losses = losses[-10:]
         logFL(losses)
-    torch.save(model.state_dict(), MODEL_FILE)
+        torch.save(model.state_dict(), MODEL_FILE)
     return model
 
 if __name__ == "__main__":

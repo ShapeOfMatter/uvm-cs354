@@ -16,7 +16,7 @@
 # Output of this job, stderr and stdout are joined by default
 # %x=job-name %j=jobid
 #SBATCH --output=%x_%j.out
-
+echo "line one!"
 source ~/.bashrc
 
 # Move to submission directory
@@ -25,6 +25,9 @@ cd ${SLURM_SUBMIT_DIR}
 
 # your job execution follows:
 source .venv/bin/activate
+
+echo "line two!"
 time python ~/uvm-cs354/assignment_1/bates_cs354_a1_train1.py
+echo "line three!"
 
 
