@@ -23,3 +23,6 @@ it's unclear where or how many dimensions there are to locating stuff. I think '
 
 Optimizer and criterion:
 https://kushaj.medium.com/training-alexnet-with-tips-and-checks-on-how-to-train-cnns-practical-cnns-in-pytorch-1-61daa679c74a
+
+
+pip install filelock

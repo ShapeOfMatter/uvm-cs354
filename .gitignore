@@ -1,6 +1,9 @@
 .venv/
 .mypy_cache/
 assignment_1/sketch_subset
+assignment_1/sketch_all_data
+assignment_1/sketch_train
+assignment_1/sketch_test
 __pycache__
 *.pt
 assignment_1/png_224x224.zip
