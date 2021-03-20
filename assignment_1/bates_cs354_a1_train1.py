@@ -95,7 +95,7 @@ def make_batches(data_directory: str, max_batch_size: int, worker: Worker):
 
 def epoch(name, model, training_data, testing_data, worker: Worker):
     optimizer, criterion = make_trainer(model, worker.trainer)
-    train(model, testing_data, optimizer, criterion, name, worker)
+    train(model, training_data, optimizer, criterion, name, worker)
     accuracy = test(model, testing_data, criterion, worker)
     return accuracy
 
