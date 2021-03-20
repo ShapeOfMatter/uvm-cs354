@@ -35,7 +35,6 @@ class Settings:
     trainable_classifier: Tuple[bool, ...]
     training_profiles: Tuple[TrainingSettings, ...]
     max_batch_size: int
-    max_seconds: int
     total_lifetime: int
     eon_lifetime: int
 
