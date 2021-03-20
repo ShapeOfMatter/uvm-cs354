@@ -26,3 +26,7 @@ https://kushaj.medium.com/training-alexnet-with-tips-and-checks-on-how-to-train-
 
 
 pip install filelock
+pip install dataclass
+pip install dataclasses-json
+
+

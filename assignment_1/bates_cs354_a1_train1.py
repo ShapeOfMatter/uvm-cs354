@@ -13,6 +13,8 @@ from torchvision.datasets import ImageFolder
 from torchvision.utils import make_grid
 from typing import Iterable, Tuple
 
+from state import Settings, TrainingSettings, Worker
+
 preprocess = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
@@ -86,7 +88,7 @@ def make_batches(data_directory: str, max_batch_size: int, worker: Worker):
                       in range(max_batch_size, 0, -1)
                       if (len(images) % n) == 0)
     worker.log(f'Using batch-size {batch_size}')
-    return DataLoader(i,
+    return DataLoader(images,
                       batch_size=batch_size,
                       shuffle=True,
                       pin_memory=HAS_CUDA,)
@@ -107,7 +109,7 @@ def main(settings_file):
         for e in worker.epochs(settings):
             worker.upkeep_model(model, settings)
             accuracy = epoch(e, model, train_batch, test_batch, worker)
-            upkeep_state(worker, model, accuracy)
+            worker.upkeep_state(model, accuracy)
 
 if __name__ == "__main__":
     main(sys.argv[1])
