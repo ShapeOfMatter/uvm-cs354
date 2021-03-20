@@ -277,5 +277,6 @@
   ],
   "max_batch_size": 100,
   "total_lifetime": 259200,
+  "slurm_file": "bates_cs354_a1_submit3.sh",
   "eon_lifetime": 2400
 }

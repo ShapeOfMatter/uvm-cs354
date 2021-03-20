@@ -7,7 +7,7 @@ files = {dirpath.split('/')[1]: tuple((dirpath, filename, int(filename.split('.'
                                       for filename in filenames)
          for (dirpath, dirnames, filenames)
          in walk('sketch_all_data')
-         if '.DS_Store' not in filenames}
+         if '.DS_Store' not in filenames and 1 < len(dirpath.split('/'))}
 
 for (category, tuples) in files.items():
     in_order = sorted(tuples, key=lambda t: t[2])

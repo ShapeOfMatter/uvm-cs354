@@ -9,19 +9,23 @@
         "weight_decay": 0.0005
       },
       "log_file": "test0.log",
-      "awake": true,
+      "awake": false,
       "woke_up": 1616213598
+    },
+    "w_test0_1": {
+      "name": "w_test0_1",
+      "trainer": {
+        "name": "slow",
+        "learning_rate": 0.001,
+        "momentum": 0.5,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test0.log",
+      "awake": false,
+      "woke_up": 1616214013
     }
   },
   "models": [
-    {
-      "accuracy": 0.07354,
-      "worked_on": [
-        "w_test0_0",
-        "w_test0_0"
-      ],
-      "saved_in": "test0_2.pt"
-    },
     {
       "accuracy": 0.07468,
       "worked_on": [
@@ -33,15 +37,29 @@
     {
       "accuracy": 0.7328,
       "worked_on": [
-        "w_test0_0"
+        "w_test0_0",
+        "w_test0_1"
       ],
       "saved_in": "test0_0.pt"
+    },
+    {
+      "accuracy": 0.7112,
+      "worked_on": [
+        "w_test0_0"
+      ],
+      "saved_in": "test0_2.pt"
     }
   ],
   "used_profiles": [
     {
       "name": "smelly",
       "learning_rate": 0.01,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "slow",
+      "learning_rate": 0.001,
       "momentum": 0.5,
       "weight_decay": 0.0005
     }

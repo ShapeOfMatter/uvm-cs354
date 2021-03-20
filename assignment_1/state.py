@@ -37,6 +37,7 @@ class Settings:
     max_batch_size: int
     total_lifetime: int
     eon_lifetime: int
+    slurm_file: str
 
 def read_whole_file(filename: str) -> str:
     with open(filename, 'r') as f:
@@ -177,13 +178,13 @@ def initialize_and_recure(settings: Settings):
             state.workers[worker.name] = worker.as_dummy()
             write_whole_file(settings.state_file, state.to_json(indent=2))
         if time() < state.start_time + settings.total_lifetime:
-            slurm_recurse()
+            slurm_recurse(settings)
             worker.log("recursing!")
         else:
             worker.log("dieing!")
 
-def slurm_recurse():
-    run(['sbatch', 'bates_cs354_a1_submit.sh'])
+def slurm_recurse(settings: Settings):
+    run(['sbatch', settings.slurm_file])
 
 
 
