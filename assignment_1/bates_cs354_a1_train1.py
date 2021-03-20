@@ -13,7 +13,7 @@ from torchvision.datasets import ImageFolder
 from torchvision.utils import make_grid
 from typing import Iterable, Tuple
 
-from state import Settings, TrainingSettings, Worker
+from state import Settings, TrainingSettings, Worker, get_settings, initialize_and_recure
 
 preprocess = transforms.Compose([
     transforms.ToTensor(),
@@ -109,7 +109,7 @@ def main(settings_file):
         for e in worker.epochs(settings):
             worker.upkeep_model(model, settings)
             accuracy = epoch(e, model, train_batch, test_batch, worker)
-            worker.upkeep_state(model, accuracy)
+            worker.upkeep_state(model, accuracy, settings)
 
 if __name__ == "__main__":
     main(sys.argv[1])

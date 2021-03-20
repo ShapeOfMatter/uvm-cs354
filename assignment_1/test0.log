@@ -1,0 +1,570 @@
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0Found 250 classes.Using batch-size 10Using batch-size 10Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)w_test0_0 is keeping the same model.Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 5.631568Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 4.815639Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 4.841938Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 4.967370Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 4.491805Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 4.712007Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 4.692897Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 4.539268Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 4.270089Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 3.839348Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+w_test0_0 is keeping the same model.
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 5.361786
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 5.194776
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 4.549472
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 4.670461
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 4.195431
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 4.963170
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 4.258031
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 4.139101
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 4.413354
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 3.486956
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 4.085919
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 4.859420
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 4.287482
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 3.973659
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 3.831968
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 3.146470
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 3.228099
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+w_test0_0 is keeping the same model.
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 5.437070
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 4.787021
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 5.171090
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 5.177345
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 4.456941
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 3.593428
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 3.732752
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 4.351483
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 3.292925
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 4.301902
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 4.246667
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 2.231831
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 4.858698
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 4.680727
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 5.179494
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 3.018917
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 4.225774
+Train Epoch: e_0_w_test0_0 [4250/5000 (85%)]	Loss: 3.210255
+Train Epoch: e_0_w_test0_0 [4500/5000 (90%)]	Loss: 1.970912
+Train Epoch: e_0_w_test0_0 [4750/5000 (95%)]	Loss: 4.125518
+
+Test set: Average loss: 2.8754, Accuracy: 1713/5000 (34%)
+
+Saved a new model
+Next epoch: e_1_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+w_test0_0 is keeping the same model.
+Train Epoch: e_1_w_test0_0 [0/5000 (0%)]	Loss: 2.540995
+Train Epoch: e_1_w_test0_0 [250/5000 (5%)]	Loss: 2.412291
+Train Epoch: e_1_w_test0_0 [500/5000 (10%)]	Loss: 2.608813
+Train Epoch: e_1_w_test0_0 [750/5000 (15%)]	Loss: 4.342540
+Train Epoch: e_1_w_test0_0 [1000/5000 (20%)]	Loss: 3.022101
+Train Epoch: e_1_w_test0_0 [1250/5000 (25%)]	Loss: 3.689011
+Train Epoch: e_1_w_test0_0 [1500/5000 (30%)]	Loss: 2.648234
+Train Epoch: e_1_w_test0_0 [1750/5000 (35%)]	Loss: 2.955511
+Train Epoch: e_1_w_test0_0 [2000/5000 (40%)]	Loss: 1.982699
+Train Epoch: e_1_w_test0_0 [2250/5000 (45%)]	Loss: 3.167242
+Train Epoch: e_1_w_test0_0 [2500/5000 (50%)]	Loss: 4.148261
+Train Epoch: e_1_w_test0_0 [2750/5000 (55%)]	Loss: 2.888868
+Train Epoch: e_1_w_test0_0 [3000/5000 (60%)]	Loss: 3.719176
+Train Epoch: e_1_w_test0_0 [3250/5000 (65%)]	Loss: 4.434530
+Train Epoch: e_1_w_test0_0 [3500/5000 (70%)]	Loss: 4.363931
+Train Epoch: e_1_w_test0_0 [3750/5000 (75%)]	Loss: 3.378578
+Train Epoch: e_1_w_test0_0 [4000/5000 (80%)]	Loss: 2.393252
+Train Epoch: e_1_w_test0_0 [4250/5000 (85%)]	Loss: 3.935228
+Train Epoch: e_1_w_test0_0 [4500/5000 (90%)]	Loss: 3.079684
+Train Epoch: e_1_w_test0_0 [4750/5000 (95%)]	Loss: 3.191431
+
+Test set: Average loss: 2.4047, Accuracy: 2034/5000 (41%)
+
+Saved a new model
+Next epoch: e_2_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+w_test0_0 is keeping the same model.
+Train Epoch: e_2_w_test0_0 [0/5000 (0%)]	Loss: 2.576701
+Train Epoch: e_2_w_test0_0 [250/5000 (5%)]	Loss: 4.044305
+Train Epoch: e_2_w_test0_0 [500/5000 (10%)]	Loss: 3.131508
+Train Epoch: e_2_w_test0_0 [750/5000 (15%)]	Loss: 2.896838
+Train Epoch: e_2_w_test0_0 [1000/5000 (20%)]	Loss: 3.350857
+Train Epoch: e_2_w_test0_0 [1250/5000 (25%)]	Loss: 2.469250
+Train Epoch: e_2_w_test0_0 [1500/5000 (30%)]	Loss: 3.045491
+Train Epoch: e_2_w_test0_0 [1750/5000 (35%)]	Loss: 4.482327
+Train Epoch: e_2_w_test0_0 [2000/5000 (40%)]	Loss: 2.325965
+Train Epoch: e_2_w_test0_0 [2250/5000 (45%)]	Loss: 3.276680
+Train Epoch: e_2_w_test0_0 [2500/5000 (50%)]	Loss: 3.524441
+Train Epoch: e_2_w_test0_0 [2750/5000 (55%)]	Loss: 3.695554
+Train Epoch: e_2_w_test0_0 [3000/5000 (60%)]	Loss: 2.484434
+Train Epoch: e_2_w_test0_0 [3250/5000 (65%)]	Loss: 3.946662
+Train Epoch: e_2_w_test0_0 [3500/5000 (70%)]	Loss: 3.045712
+Train Epoch: e_2_w_test0_0 [3750/5000 (75%)]	Loss: 3.024478
+Train Epoch: e_2_w_test0_0 [4000/5000 (80%)]	Loss: 2.071369
+Train Epoch: e_2_w_test0_0 [4250/5000 (85%)]	Loss: 2.742989
+Train Epoch: e_2_w_test0_0 [4500/5000 (90%)]	Loss: 3.325243
+Train Epoch: e_2_w_test0_0 [4750/5000 (95%)]	Loss: 2.647698
+
+Test set: Average loss: 1.9968, Accuracy: 2576/5000 (52%)
+
+Saved a new model
+Next epoch: e_3_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 2.811211
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 4.452936
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 3.113322
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 3.385278
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 2.187043
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 2.808308
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 3.659009
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 3.448472
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 2.892356
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 3.486444
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 3.379130
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 2.375890
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 3.094810
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 3.242324
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 3.832125
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 2.676192
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 3.206769
+Train Epoch: e_0_w_test0_0 [4250/5000 (85%)]	Loss: 2.473898
+Train Epoch: e_0_w_test0_0 [4500/5000 (90%)]	Loss: 3.725965
+Train Epoch: e_0_w_test0_0 [4750/5000 (95%)]	Loss: 3.079365
+
+Test set: Average loss: 2.2186, Accuracy: 2241/5000 (45%)
+
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 2.088482
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 2.257741
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 2.387530
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 2.727197
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 2.478480
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 3.252997
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 3.656363
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 2.814599
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 2.161474
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 3.620639
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 2.211058
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 3.205204
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 2.096715
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 2.225623
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 4.240293
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 2.686882
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 2.044566
+Train Epoch: e_0_w_test0_0 [4250/5000 (85%)]	Loss: 3.939980
+Train Epoch: e_0_w_test0_0 [4500/5000 (90%)]	Loss: 3.017405
+Train Epoch: e_0_w_test0_0 [4750/5000 (95%)]	Loss: 1.972899
+
+Test set: Average loss: 1.9474, Accuracy: 2539/5000 (51%)
+
+Next epoch: e_1_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_1_w_test0_0 [0/5000 (0%)]	Loss: 2.856448
+Train Epoch: e_1_w_test0_0 [250/5000 (5%)]	Loss: 2.585206
+Train Epoch: e_1_w_test0_0 [500/5000 (10%)]	Loss: 1.776009
+Train Epoch: e_1_w_test0_0 [750/5000 (15%)]	Loss: 3.191392
+Train Epoch: e_1_w_test0_0 [1000/5000 (20%)]	Loss: 1.819482
+Train Epoch: e_1_w_test0_0 [1250/5000 (25%)]	Loss: 3.100259
+Train Epoch: e_1_w_test0_0 [1500/5000 (30%)]	Loss: 2.254429
+Train Epoch: e_1_w_test0_0 [1750/5000 (35%)]	Loss: 2.405805
+Train Epoch: e_1_w_test0_0 [2000/5000 (40%)]	Loss: 3.010012
+Train Epoch: e_1_w_test0_0 [2250/5000 (45%)]	Loss: 3.079542
+Train Epoch: e_1_w_test0_0 [2500/5000 (50%)]	Loss: 2.919482
+Train Epoch: e_1_w_test0_0 [2750/5000 (55%)]	Loss: 2.960365
+Train Epoch: e_1_w_test0_0 [3000/5000 (60%)]	Loss: 3.106469
+Train Epoch: e_1_w_test0_0 [3250/5000 (65%)]	Loss: 3.180179
+Train Epoch: e_1_w_test0_0 [3500/5000 (70%)]	Loss: 3.276115
+Train Epoch: e_1_w_test0_0 [3750/5000 (75%)]	Loss: 2.520788
+Train Epoch: e_1_w_test0_0 [4000/5000 (80%)]	Loss: 3.450207
+Train Epoch: e_1_w_test0_0 [4250/5000 (85%)]	Loss: 2.610301
+Train Epoch: e_1_w_test0_0 [4500/5000 (90%)]	Loss: 3.237001
+Train Epoch: e_1_w_test0_0 [4750/5000 (95%)]	Loss: 2.816329
+
+Test set: Average loss: 1.9138, Accuracy: 2511/5000 (50%)
+
+Next epoch: e_2_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_2_w_test0_0 [0/5000 (0%)]	Loss: 3.136107
+Train Epoch: e_2_w_test0_0 [250/5000 (5%)]	Loss: 2.498325
+Train Epoch: e_2_w_test0_0 [500/5000 (10%)]	Loss: 1.873553
+Train Epoch: e_2_w_test0_0 [750/5000 (15%)]	Loss: 2.509369
+Train Epoch: e_2_w_test0_0 [1000/5000 (20%)]	Loss: 2.024801
+Train Epoch: e_2_w_test0_0 [1250/5000 (25%)]	Loss: 3.647185
+Train Epoch: e_2_w_test0_0 [1500/5000 (30%)]	Loss: 2.538018
+Train Epoch: e_2_w_test0_0 [1750/5000 (35%)]	Loss: 2.319430
+Train Epoch: e_2_w_test0_0 [2000/5000 (40%)]	Loss: 3.406300
+Train Epoch: e_2_w_test0_0 [2250/5000 (45%)]	Loss: 2.682100
+Train Epoch: e_2_w_test0_0 [2500/5000 (50%)]	Loss: 3.236388
+Train Epoch: e_2_w_test0_0 [2750/5000 (55%)]	Loss: 2.782175
+Train Epoch: e_2_w_test0_0 [3000/5000 (60%)]	Loss: 3.338150
+Train Epoch: e_2_w_test0_0 [3250/5000 (65%)]	Loss: 2.920543
+Train Epoch: e_2_w_test0_0 [3500/5000 (70%)]	Loss: 1.671773
+Train Epoch: e_2_w_test0_0 [3750/5000 (75%)]	Loss: 1.967824
+Train Epoch: e_2_w_test0_0 [4000/5000 (80%)]	Loss: 2.921008
+Train Epoch: e_2_w_test0_0 [4250/5000 (85%)]	Loss: 2.103623
+Train Epoch: e_2_w_test0_0 [4500/5000 (90%)]	Loss: 2.408965
+Train Epoch: e_2_w_test0_0 [4750/5000 (95%)]	Loss: 2.434708
+
+Test set: Average loss: 1.6794, Accuracy: 2852/5000 (57%)
+
+dieing!
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 2.892718
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 3.153363
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 1.983266
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 2.540905
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 3.145901
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 2.630715
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 2.663889
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 2.164573
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 2.102171
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 2.285960
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 3.173437
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 2.817000
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 2.436658
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 3.203044
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 1.893061
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 2.605083
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 2.625241
+Train Epoch: e_0_w_test0_0 [4250/5000 (85%)]	Loss: 3.096061
+Train Epoch: e_0_w_test0_0 [4500/5000 (90%)]	Loss: 2.712283
+Train Epoch: e_0_w_test0_0 [4750/5000 (95%)]	Loss: 1.730691
+
+Test set: Average loss: 1.9650, Accuracy: 2490/5000 (50%)
+
+Discarding model with accuracy 0.498.
+Next epoch: e_1_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_1_w_test0_0 [0/5000 (0%)]	Loss: 2.649375
+Train Epoch: e_1_w_test0_0 [250/5000 (5%)]	Loss: 2.433049
+Train Epoch: e_1_w_test0_0 [500/5000 (10%)]	Loss: 1.450641
+Train Epoch: e_1_w_test0_0 [750/5000 (15%)]	Loss: 1.994181
+Train Epoch: e_1_w_test0_0 [1000/5000 (20%)]	Loss: 2.141854
+Train Epoch: e_1_w_test0_0 [1250/5000 (25%)]	Loss: 1.719824
+Train Epoch: e_1_w_test0_0 [1500/5000 (30%)]	Loss: 2.463965
+Train Epoch: e_1_w_test0_0 [1750/5000 (35%)]	Loss: 3.608040
+Train Epoch: e_1_w_test0_0 [2000/5000 (40%)]	Loss: 1.207447
+Train Epoch: e_1_w_test0_0 [2250/5000 (45%)]	Loss: 1.717903
+Train Epoch: e_1_w_test0_0 [2500/5000 (50%)]	Loss: 3.621417
+Train Epoch: e_1_w_test0_0 [2750/5000 (55%)]	Loss: 2.208675
+Train Epoch: e_1_w_test0_0 [3000/5000 (60%)]	Loss: 1.921018
+Train Epoch: e_1_w_test0_0 [3250/5000 (65%)]	Loss: 1.438373
+Train Epoch: e_1_w_test0_0 [3500/5000 (70%)]	Loss: 2.758615
+Train Epoch: e_1_w_test0_0 [3750/5000 (75%)]	Loss: 1.210614
+Train Epoch: e_1_w_test0_0 [4000/5000 (80%)]	Loss: 2.995328
+Train Epoch: e_1_w_test0_0 [4250/5000 (85%)]	Loss: 2.980678
+Train Epoch: e_1_w_test0_0 [4500/5000 (90%)]	Loss: 2.092137
+Train Epoch: e_1_w_test0_0 [4750/5000 (95%)]	Loss: 3.213840
+
+Test set: Average loss: 1.5589, Accuracy: 2961/5000 (59%)
+
+Next epoch: e_2_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_2_w_test0_0 [0/5000 (0%)]	Loss: 0.962773
+Train Epoch: e_2_w_test0_0 [250/5000 (5%)]	Loss: 1.157285
+Train Epoch: e_2_w_test0_0 [500/5000 (10%)]	Loss: 1.960111
+Train Epoch: e_2_w_test0_0 [750/5000 (15%)]	Loss: 1.967720
+Train Epoch: e_2_w_test0_0 [1000/5000 (20%)]	Loss: 2.463889
+Train Epoch: e_2_w_test0_0 [1250/5000 (25%)]	Loss: 3.259145
+Train Epoch: e_2_w_test0_0 [1500/5000 (30%)]	Loss: 2.157552
+Train Epoch: e_2_w_test0_0 [1750/5000 (35%)]	Loss: 2.256952
+Train Epoch: e_2_w_test0_0 [2000/5000 (40%)]	Loss: 1.282361
+Train Epoch: e_2_w_test0_0 [2250/5000 (45%)]	Loss: 2.085088
+Train Epoch: e_2_w_test0_0 [2500/5000 (50%)]	Loss: 1.820911
+Train Epoch: e_2_w_test0_0 [2750/5000 (55%)]	Loss: 2.702589
+Train Epoch: e_2_w_test0_0 [3000/5000 (60%)]	Loss: 2.885065
+Train Epoch: e_2_w_test0_0 [3250/5000 (65%)]	Loss: 1.984047
+Train Epoch: e_2_w_test0_0 [3500/5000 (70%)]	Loss: 2.268323
+Train Epoch: e_2_w_test0_0 [3750/5000 (75%)]	Loss: 2.269855
+Train Epoch: e_2_w_test0_0 [4000/5000 (80%)]	Loss: 2.176407
+Train Epoch: e_2_w_test0_0 [4250/5000 (85%)]	Loss: 1.663461
+Train Epoch: e_2_w_test0_0 [4500/5000 (90%)]	Loss: 2.976735
+Train Epoch: e_2_w_test0_0 [4750/5000 (95%)]	Loss: 3.336657
+
+Test set: Average loss: 1.4627, Accuracy: 3097/5000 (62%)
+
+dieing!
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 1.680790
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 2.027346
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 1.788153
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 2.337280
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 1.774066
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 1.839101
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 1.539526
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 2.587784
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 1.327275
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 1.689744
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 2.524226
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 1.308710
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 1.639699
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 1.866507
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 3.716708
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 2.065578
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 3.625981
+Train Epoch: e_0_w_test0_0 [4250/5000 (85%)]	Loss: 0.599212
+Train Epoch: e_0_w_test0_0 [4500/5000 (90%)]	Loss: 2.130075
+Train Epoch: e_0_w_test0_0 [4750/5000 (95%)]	Loss: 1.923479
+
+Test set: Average loss: 1.4831, Accuracy: 3008/5000 (60%)
+
+Next epoch: e_1_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_1_w_test0_0 [0/5000 (0%)]	Loss: 3.675552
+Train Epoch: e_1_w_test0_0 [250/5000 (5%)]	Loss: 3.758315
+Train Epoch: e_1_w_test0_0 [500/5000 (10%)]	Loss: 1.297219
+Train Epoch: e_1_w_test0_0 [750/5000 (15%)]	Loss: 1.719969
+Train Epoch: e_1_w_test0_0 [1000/5000 (20%)]	Loss: 1.687760
+Train Epoch: e_1_w_test0_0 [1250/5000 (25%)]	Loss: 2.568085
+Train Epoch: e_1_w_test0_0 [1500/5000 (30%)]	Loss: 2.068603
+Train Epoch: e_1_w_test0_0 [1750/5000 (35%)]	Loss: 0.777048
+Train Epoch: e_1_w_test0_0 [2000/5000 (40%)]	Loss: 2.340452
+Train Epoch: e_1_w_test0_0 [2250/5000 (45%)]	Loss: 2.043711
+Train Epoch: e_1_w_test0_0 [2500/5000 (50%)]	Loss: 1.967961
+Train Epoch: e_1_w_test0_0 [2750/5000 (55%)]	Loss: 1.854007
+Train Epoch: e_1_w_test0_0 [3000/5000 (60%)]	Loss: 1.655803
+Train Epoch: e_1_w_test0_0 [3250/5000 (65%)]	Loss: 2.271309
+Train Epoch: e_1_w_test0_0 [3500/5000 (70%)]	Loss: 2.912468
+Train Epoch: e_1_w_test0_0 [3750/5000 (75%)]	Loss: 2.590189
+Train Epoch: e_1_w_test0_0 [4000/5000 (80%)]	Loss: 1.714936
+Train Epoch: e_1_w_test0_0 [4250/5000 (85%)]	Loss: 1.892207
+Train Epoch: e_1_w_test0_0 [4500/5000 (90%)]	Loss: 1.914662
+Train Epoch: e_1_w_test0_0 [4750/5000 (95%)]	Loss: 1.692976
+
+Test set: Average loss: 1.3025, Accuracy: 3266/5000 (65%)
+
+Next epoch: e_2_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_2_w_test0_0 [0/5000 (0%)]	Loss: 1.882945
+Train Epoch: e_2_w_test0_0 [250/5000 (5%)]	Loss: 2.169300
+Train Epoch: e_2_w_test0_0 [500/5000 (10%)]	Loss: 1.745099
+Train Epoch: e_2_w_test0_0 [750/5000 (15%)]	Loss: 2.712881
+Train Epoch: e_2_w_test0_0 [1000/5000 (20%)]	Loss: 1.042987
+Train Epoch: e_2_w_test0_0 [1250/5000 (25%)]	Loss: 2.050206
+Train Epoch: e_2_w_test0_0 [1500/5000 (30%)]	Loss: 2.437793
+Train Epoch: e_2_w_test0_0 [1750/5000 (35%)]	Loss: 2.197129
+Train Epoch: e_2_w_test0_0 [2000/5000 (40%)]	Loss: 2.269847
+Train Epoch: e_2_w_test0_0 [2250/5000 (45%)]	Loss: 2.118143
+Train Epoch: e_2_w_test0_0 [2500/5000 (50%)]	Loss: 2.821943
+Train Epoch: e_2_w_test0_0 [2750/5000 (55%)]	Loss: 2.301147
+Train Epoch: e_2_w_test0_0 [3000/5000 (60%)]	Loss: 3.112283
+Train Epoch: e_2_w_test0_0 [3250/5000 (65%)]	Loss: 1.779979
+Train Epoch: e_2_w_test0_0 [3500/5000 (70%)]	Loss: 1.476157
+Train Epoch: e_2_w_test0_0 [3750/5000 (75%)]	Loss: 1.591742
+Train Epoch: e_2_w_test0_0 [4000/5000 (80%)]	Loss: 2.089732
+Train Epoch: e_2_w_test0_0 [4250/5000 (85%)]	Loss: 1.862597
+Train Epoch: e_2_w_test0_0 [4500/5000 (90%)]	Loss: 3.012414
+Train Epoch: e_2_w_test0_0 [4750/5000 (95%)]	Loss: 3.002236
+
+Test set: Average loss: 1.3139, Accuracy: 3217/5000 (64%)
+
+dieing!
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 2.235135
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 1.103444
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 1.827715
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 1.305805
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 0.800360
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 2.077853
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 2.163385
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 2.758315
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 1.308499
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 1.960174
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 2.062804
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 1.739670
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 0.657878
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 1.766547
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 0.718162
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 1.953593
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 3.019753
+Train Epoch: e_0_w_test0_0 [4250/5000 (85%)]	Loss: 2.287360
+Train Epoch: e_0_w_test0_0 [4500/5000 (90%)]	Loss: 1.149181
+Train Epoch: e_0_w_test0_0 [4750/5000 (95%)]	Loss: 0.984650
+
+Test set: Average loss: 1.1681, Accuracy: 3450/5000 (69%)
+
+Next epoch: e_1_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_1_w_test0_0 [0/5000 (0%)]	Loss: 1.774990
+Train Epoch: e_1_w_test0_0 [250/5000 (5%)]	Loss: 0.760984
+Train Epoch: e_1_w_test0_0 [500/5000 (10%)]	Loss: 2.325690
+Train Epoch: e_1_w_test0_0 [750/5000 (15%)]	Loss: 2.617492
+Train Epoch: e_1_w_test0_0 [1000/5000 (20%)]	Loss: 1.255336
+Train Epoch: e_1_w_test0_0 [1250/5000 (25%)]	Loss: 2.275743
+Train Epoch: e_1_w_test0_0 [1500/5000 (30%)]	Loss: 2.277631
+Train Epoch: e_1_w_test0_0 [1750/5000 (35%)]	Loss: 2.159883
+Train Epoch: e_1_w_test0_0 [2000/5000 (40%)]	Loss: 1.960165
+Train Epoch: e_1_w_test0_0 [2250/5000 (45%)]	Loss: 1.294423
+Train Epoch: e_1_w_test0_0 [2500/5000 (50%)]	Loss: 2.621363
+Train Epoch: e_1_w_test0_0 [2750/5000 (55%)]	Loss: 3.484143
+Train Epoch: e_1_w_test0_0 [3000/5000 (60%)]	Loss: 1.386727
+Train Epoch: e_1_w_test0_0 [3250/5000 (65%)]	Loss: 2.960024
+Train Epoch: e_1_w_test0_0 [3500/5000 (70%)]	Loss: 1.571196
+Train Epoch: e_1_w_test0_0 [3750/5000 (75%)]	Loss: 1.259485
+Train Epoch: e_1_w_test0_0 [4000/5000 (80%)]	Loss: 1.274351
+Train Epoch: e_1_w_test0_0 [4250/5000 (85%)]	Loss: 2.459519
+Train Epoch: e_1_w_test0_0 [4500/5000 (90%)]	Loss: 1.811156
+Train Epoch: e_1_w_test0_0 [4750/5000 (95%)]	Loss: 3.462123
+
+Test set: Average loss: 1.0827, Accuracy: 3594/5000 (72%)
+
+Next epoch: e_2_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_2_w_test0_0 [0/5000 (0%)]	Loss: 1.086061
+Train Epoch: e_2_w_test0_0 [250/5000 (5%)]	Loss: 1.474089
+Train Epoch: e_2_w_test0_0 [500/5000 (10%)]	Loss: 1.548490
+Train Epoch: e_2_w_test0_0 [750/5000 (15%)]	Loss: 1.493648
+Train Epoch: e_2_w_test0_0 [1000/5000 (20%)]	Loss: 3.142342
+Train Epoch: e_2_w_test0_0 [1250/5000 (25%)]	Loss: 1.704149
+Train Epoch: e_2_w_test0_0 [1500/5000 (30%)]	Loss: 0.986895
+Train Epoch: e_2_w_test0_0 [1750/5000 (35%)]	Loss: 2.648209
+Train Epoch: e_2_w_test0_0 [2000/5000 (40%)]	Loss: 1.594867
+Train Epoch: e_2_w_test0_0 [2250/5000 (45%)]	Loss: 2.086277
+Train Epoch: e_2_w_test0_0 [2500/5000 (50%)]	Loss: 1.436749
+Train Epoch: e_2_w_test0_0 [2750/5000 (55%)]	Loss: 2.341496
+Train Epoch: e_2_w_test0_0 [3000/5000 (60%)]	Loss: 1.926853
+Train Epoch: e_2_w_test0_0 [3250/5000 (65%)]	Loss: 2.032385
+Train Epoch: e_2_w_test0_0 [3500/5000 (70%)]	Loss: 2.047327
+Train Epoch: e_2_w_test0_0 [3750/5000 (75%)]	Loss: 1.631402
+Train Epoch: e_2_w_test0_0 [4000/5000 (80%)]	Loss: 2.425977
+Train Epoch: e_2_w_test0_0 [4250/5000 (85%)]	Loss: 1.983441
+Train Epoch: e_2_w_test0_0 [4500/5000 (90%)]	Loss: 1.255112
+Train Epoch: e_2_w_test0_0 [4750/5000 (95%)]	Loss: 2.771077
+
+Test set: Average loss: 1.0271, Accuracy: 3630/5000 (73%)
+
+dieing!
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 2.435325
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 1.417987
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 2.317351
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 2.270438
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 1.023809
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 2.941677
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 1.417287
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 1.382049
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 1.368290
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 1.318488
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 3.694360
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 0.846955
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 0.834587
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 1.614585
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 2.473963
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 1.260859
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 2.060069
+Train Epoch: e_0_w_test0_0 [4250/5000 (85%)]	Loss: 0.514972
+Train Epoch: e_0_w_test0_0 [4500/5000 (90%)]	Loss: 1.724420
+Train Epoch: e_0_w_test0_0 [4750/5000 (95%)]	Loss: 2.478734
+
+Test set: Average loss: 1.0278, Accuracy: 3677/5000 (74%)
+
+Next epoch: e_1_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_1_w_test0_0 [0/5000 (0%)]	Loss: 0.976332
+Train Epoch: e_1_w_test0_0 [250/5000 (5%)]	Loss: 1.441330
+Train Epoch: e_1_w_test0_0 [500/5000 (10%)]	Loss: 0.812451
+Train Epoch: e_1_w_test0_0 [750/5000 (15%)]	Loss: 1.413965
+Train Epoch: e_1_w_test0_0 [1000/5000 (20%)]	Loss: 1.419878
+Train Epoch: e_1_w_test0_0 [1250/5000 (25%)]	Loss: 0.379077
+Train Epoch: e_1_w_test0_0 [1500/5000 (30%)]	Loss: 3.320297
+Train Epoch: e_1_w_test0_0 [1750/5000 (35%)]	Loss: 1.528289
+Train Epoch: e_1_w_test0_0 [2000/5000 (40%)]	Loss: 1.612218
+Train Epoch: e_1_w_test0_0 [2250/5000 (45%)]	Loss: 2.450712
+Train Epoch: e_1_w_test0_0 [2500/5000 (50%)]	Loss: 0.946164
+Train Epoch: e_1_w_test0_0 [2750/5000 (55%)]	Loss: 2.734819
+Train Epoch: e_1_w_test0_0 [3000/5000 (60%)]	Loss: 1.227767
+Train Epoch: e_1_w_test0_0 [3250/5000 (65%)]	Loss: 1.566204
+Train Epoch: e_1_w_test0_0 [3500/5000 (70%)]	Loss: 1.573607
+Train Epoch: e_1_w_test0_0 [3750/5000 (75%)]	Loss: 2.278774
+Train Epoch: e_1_w_test0_0 [4000/5000 (80%)]	Loss: 1.835930
+Train Epoch: e_1_w_test0_0 [4250/5000 (85%)]	Loss: 1.813739
+Train Epoch: e_1_w_test0_0 [4500/5000 (90%)]	Loss: 1.757947
+Train Epoch: e_1_w_test0_0 [4750/5000 (95%)]	Loss: 1.590702
+
+Test set: Average loss: 1.0697, Accuracy: 3626/5000 (73%)
+
+Next epoch: e_2_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_2_w_test0_0 [0/5000 (0%)]	Loss: 2.937487
+Train Epoch: e_2_w_test0_0 [250/5000 (5%)]	Loss: 0.910438
+Train Epoch: e_2_w_test0_0 [500/5000 (10%)]	Loss: 1.058976
+Train Epoch: e_2_w_test0_0 [750/5000 (15%)]	Loss: 1.065399
+Train Epoch: e_2_w_test0_0 [1000/5000 (20%)]	Loss: 2.157783
+Train Epoch: e_2_w_test0_0 [1250/5000 (25%)]	Loss: 1.455600
+Train Epoch: e_2_w_test0_0 [1500/5000 (30%)]	Loss: 2.619416
+Train Epoch: e_2_w_test0_0 [1750/5000 (35%)]	Loss: 0.964326
+Train Epoch: e_2_w_test0_0 [2000/5000 (40%)]	Loss: 1.689859
+Train Epoch: e_2_w_test0_0 [2250/5000 (45%)]	Loss: 2.320740
+Train Epoch: e_2_w_test0_0 [2500/5000 (50%)]	Loss: 2.969577
+Train Epoch: e_2_w_test0_0 [2750/5000 (55%)]	Loss: 1.013638
+Train Epoch: e_2_w_test0_0 [3000/5000 (60%)]	Loss: 2.483650
+Train Epoch: e_2_w_test0_0 [3250/5000 (65%)]	Loss: 2.659082
+Train Epoch: e_2_w_test0_0 [3500/5000 (70%)]	Loss: 0.997732
+Train Epoch: e_2_w_test0_0 [3750/5000 (75%)]	Loss: 1.891584
+Train Epoch: e_2_w_test0_0 [4000/5000 (80%)]	Loss: 2.028654
+Train Epoch: e_2_w_test0_0 [4250/5000 (85%)]	Loss: 0.741472
+Train Epoch: e_2_w_test0_0 [4500/5000 (90%)]	Loss: 1.817157
+Train Epoch: e_2_w_test0_0 [4750/5000 (95%)]	Loss: 2.118851
+
+Test set: Average loss: 0.9558, Accuracy: 3734/5000 (75%)
+
+dieing!
+Hi I'm w_test0_0! CUDA: False. Location: cpu. gpus: 0
+Found 250 classes.
+Using batch-size 10
+Using batch-size 10
+Next epoch: e_0_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_0_w_test0_0 [0/5000 (0%)]	Loss: 3.154042
+Train Epoch: e_0_w_test0_0 [250/5000 (5%)]	Loss: 1.840899
+Train Epoch: e_0_w_test0_0 [500/5000 (10%)]	Loss: 1.409386
+Train Epoch: e_0_w_test0_0 [750/5000 (15%)]	Loss: 1.426226
+Train Epoch: e_0_w_test0_0 [1000/5000 (20%)]	Loss: 2.449443
+Train Epoch: e_0_w_test0_0 [1250/5000 (25%)]	Loss: 1.613526
+Train Epoch: e_0_w_test0_0 [1500/5000 (30%)]	Loss: 2.571712
+Train Epoch: e_0_w_test0_0 [1750/5000 (35%)]	Loss: 1.080751
+Train Epoch: e_0_w_test0_0 [2000/5000 (40%)]	Loss: 2.134345
+Train Epoch: e_0_w_test0_0 [2250/5000 (45%)]	Loss: 2.041633
+Train Epoch: e_0_w_test0_0 [2500/5000 (50%)]	Loss: 2.934413
+Train Epoch: e_0_w_test0_0 [2750/5000 (55%)]	Loss: 1.233363
+Train Epoch: e_0_w_test0_0 [3000/5000 (60%)]	Loss: 2.041304
+Train Epoch: e_0_w_test0_0 [3250/5000 (65%)]	Loss: 1.636336
+Train Epoch: e_0_w_test0_0 [3500/5000 (70%)]	Loss: 2.115587
+Train Epoch: e_0_w_test0_0 [3750/5000 (75%)]	Loss: 1.819859
+Train Epoch: e_0_w_test0_0 [4000/5000 (80%)]	Loss: 2.831784
+Train Epoch: e_0_w_test0_0 [4250/5000 (85%)]	Loss: 0.841627
+Train Epoch: e_0_w_test0_0 [4500/5000 (90%)]	Loss: 1.261413
+Train Epoch: e_0_w_test0_0 [4750/5000 (95%)]	Loss: 2.545355
+
+Test set: Average loss: 1.0077, Accuracy: 3664/5000 (73%)
+
+Next epoch: e_1_w_test0_0. Using: TrainingSettings(name='smelly', learning_rate=0.01, momentum=0.5, weight_decay=0.0005)
+Train Epoch: e_1_w_test0_0 [0/5000 (0%)]	Loss: 1.135893
+Train Epoch: e_1_w_test0_0 [250/5000 (5%)]	Loss: 2.453604
+Train Epoch: e_1_w_test0_0 [500/5000 (10%)]	Loss: 1.715844
+Train Epoch: e_1_w_test0_0 [750/5000 (15%)]	Loss: 3.601662
+Train Epoch: e_1_w_test0_0 [1000/5000 (20%)]	Loss: 0.421413
+Train Epoch: e_1_w_test0_0 [1250/5000 (25%)]	Loss: 1.354234
+Train Epoch: e_1_w_test0_0 [1500/5000 (30%)]	Loss: 1.743744
+Train Epoch: e_1_w_test0_0 [1750/5000 (35%)]	Loss: 3.305783
+Train Epoch: e_1_w_test0_0 [2000/5000 (40%)]	Loss: 1.583930
+Train Epoch: e_1_w_test0_0 [2250/5000 (45%)]	Loss: 0.830274
+Train Epoch: e_1_w_test0_0 [2500/5000 (50%)]	Loss: 2.597653
+Train Epoch: e_1_w_test0_0 [2750/5000 (55%)]	Loss: 1.586156
+Train Epoch: e_1_w_test0_0 [3000/5000 (60%)]	Loss: 3.001069
+Train Epoch: e_1_w_test0_0 [3250/5000 (65%)]	Loss: 1.968632
+Train Epoch: e_1_w_test0_0 [3500/5000 (70%)]	Loss: 1.982516
+Train Epoch: e_1_w_test0_0 [3750/5000 (75%)]	Loss: 1.580436

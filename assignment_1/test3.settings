@@ -1,0 +1,281 @@
+{
+  "lock_file": ".test3",
+  "lock_timeout": 600,
+  "state_file": "test3.state",
+  "log_file": "test3.log",
+  "training_source_dir": "sketch_train",
+  "testing_source_dir": "sketch_test",
+  "model_name_format": "test3_{}.pt",
+  "num_models": 5,
+  "pretrained_features": true,
+  "pretrained_classifier": false,
+  "trainable_features": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "trainable_classifier": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "training_profiles": [
+    {
+      "name": "alex",
+      "learning_rate": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "alexa",
+      "learning_rate": 0.01,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "bond",
+      "learning_rate": 0.007,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "hank",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "handy",
+      "learning_rate": 0.007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "harrold",
+      "learning_rate": 0.001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "alex",
+      "learning_rate": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ron",
+      "learning_rate": 0.0001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "hank",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "alexa",
+      "learning_rate": 0.01,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "rachael",
+      "learning_rate": 0.0007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "handy",
+      "learning_rate": 0.007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "bond",
+      "learning_rate": 0.007,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ricky",
+      "learning_rate": 0.0001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "harrold",
+      "learning_rate": 0.001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "hank",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vince",
+      "learning_rate": 1e-05,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ron",
+      "learning_rate": 0.0001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "handy",
+      "learning_rate": 0.007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vicky",
+      "learning_rate": 7e-05,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "rachael",
+      "learning_rate": 0.0007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "harrold",
+      "learning_rate": 0.001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vallary",
+      "learning_rate": 1e-05,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ricky",
+      "learning_rate": 0.0001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ron",
+      "learning_rate": 0.0001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vince",
+      "learning_rate": 1e-05,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "rachael",
+      "learning_rate": 0.0007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vicky",
+      "learning_rate": 7e-05,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ricky",
+      "learning_rate": 0.0001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vallary",
+      "learning_rate": 1e-05,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vince",
+      "learning_rate": 1e-05,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vicky",
+      "learning_rate": 7e-05,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vallary",
+      "learning_rate": 1e-05,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    }
+  ],
+  "max_batch_size": 100,
+  "total_lifetime": 259200,
+  "eon_lifetime": 2400
+}

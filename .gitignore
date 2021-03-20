@@ -8,4 +8,4 @@ __pycache__
 *.pt
 assignment_1/png_224x224.zip
 nogit/
-
+.test*

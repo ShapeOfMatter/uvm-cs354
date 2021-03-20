@@ -1,9 +1,9 @@
 from contextlib import contextmanager
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, replace
 from dataclasses_json import dataclass_json
 from filelock import BaseFileLock, FileLock, SoftFileLock
 from itertools import count, repeat
-from pprint import pprint
+from pprint import pformat
 import random
 from subprocess import run
 from time import time
@@ -48,7 +48,6 @@ def write_whole_file(filename: str, contents: str) -> None:
 
 def get_settings(filename: str) -> Settings:
     settings = Settings.from_json(read_whole_file(filename))
-    settings.my_filename = filename
     return settings
 
 @dataclass_json
@@ -69,6 +68,10 @@ class Worker:
     awake: bool = False
     woke_up: int = 0
 
+    @staticmethod
+    def from_dummy(source: _Worker) -> 'Worker':
+        return Worker(name=source.name, trainer=source.trainer, log_file=source.log_file, awake=source.awake, woke_up=source.woke_up)
+
     def as_dummy(self) -> _Worker:
         return _Worker(name=self.name, trainer=self.trainer, log_file=self.log_file, awake=self.awake, woke_up=self.woke_up)
 
@@ -76,30 +79,32 @@ class Worker:
         with self.lock.acquire():
             with open(self.log_file, 'a') as f:
                 if isinstance(thing, str):
-                    print(thing, flush=True)
+                    f.write(thing)
                 else:
-                    pprint(thing)
+                    f.write(pformat(thing))
+                f.write('\n')
 
     def epochs(self, settings: Settings) -> Iterable[str]:
         names = map('e_{}_{}'.format, count(), repeat(self.name))
         while time() < self.woke_up + settings.eon_lifetime:
-            yield next(names)
+            next_name = next(names)
+            self.log(f'Next epoch: {next_name}. Using: {self.trainer}')
+            yield next_name
 
     def upkeep_model(self, model, settings: Settings):
         with self.lock.acquire():
             state = State.from_json(read_whole_file(settings.state_file))
             if len(state.models) < settings.num_models:
-                self.log('{self.name} is keeping the same model.')
+                self.log(f'{self.name} is keeping the same model.')
             else:
                 work_on = next(iter(sorted(state.models,
                                            key=lambda m: (len(m.worked_on),
-                                                          len(m.failed_to_beat),
                                                           m.accuracy))))
                 model.load_state_dict(torch.load(work_on.saved_in), strict=True)
-                work_on.worked.append(self.name)
-            write_whole_file(settings.state_file, state.to_json())
+                work_on.worked_on.append(self.name)
+            write_whole_file(settings.state_file, state.to_json(indent=2))
 
-    def upkeep_state(self, model, accuracy, settings):
+    def upkeep_state(self, model, accuracy: float, settings: Settings):
         with self.lock.acquire():
             state = State.from_json(read_whole_file(settings.state_file))
             if len(state.models) < settings.num_models:
@@ -114,13 +119,15 @@ class Worker:
                     self.log(f'Discarding model with accuracy {accuracy}.')
                 else:
                     torch.save(model.state_dict(), current_worst.saved_in)
-                    state.models = [*models_by_ranking[1:],
-                                    Model(accuracy=accuracy, worked_on=[], saved_in=current_worst.saved_in)]
+                    state.models.remove(current_worst)
+                    state.models.append(Model(accuracy=accuracy,
+                                              worked_on=[],
+                                              saved_in=current_worst.saved_in))
             if 1 < min(sum(name == w.name for name in m.worked_on)
                        for m in state.models
                        for w in state.workers.values()):
                 self.trainer = use_next_profile(state, settings)
-            write_whole_file(settings.state_file, state.to_json())
+            write_whole_file(settings.state_file, state.to_json(indent=2))
 
 @dataclass_json
 @dataclass(frozen=True)
@@ -147,10 +154,9 @@ def use_next_profile(state: State, settings: Settings) -> TrainingSettings:
 def initialize_and_recure(settings: Settings):
     lock = FileLock(settings.lock_file, settings.lock_timeout)
     with lock.acquire():
-        state = State.from_json(read_whole_file(settings.state_file))
-        if state.start_time is None:
-            state.start_time = int(time())
-        sleeping_workers = [Worker(**asdict(w)) for w in state.workers.values() if not w.awake]
+        _state = State.from_json(read_whole_file(settings.state_file))
+        state = replace(_state, start_time=int(time())) if _state.start_time is None else _state
+        sleeping_workers = [Worker.from_dummy(w) for w in state.workers.values() if not w.awake]
         worker = sleeping_workers[-1] if sleeping_workers else Worker(
             name=f'w_{settings.lock_file.strip(".")}_{len(state.workers)}',
             trainer=use_next_profile(state, settings),
@@ -161,7 +167,7 @@ def initialize_and_recure(settings: Settings):
         worker.awake = True
         worker.woke_up = int(time())
         state.workers[worker.name] = worker.as_dummy()
-        write_whole_file(settings.state_file, state.to_json())
+        write_whole_file(settings.state_file, state.to_json(indent=2))
     try:
         yield worker
     finally:
@@ -169,7 +175,7 @@ def initialize_and_recure(settings: Settings):
             state = State.from_json(read_whole_file(settings.state_file))
             worker.awake = False
             state.workers[worker.name] = worker.as_dummy()
-            write_whole_file(settings.state_file, state.to_json())
+            write_whole_file(settings.state_file, state.to_json(indent=2))
         if time() < state.start_time + settings.total_lifetime:
             slurm_recurse()
             worker.log("recursing!")

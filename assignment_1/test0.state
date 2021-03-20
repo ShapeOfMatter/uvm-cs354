@@ -1,1 +1,50 @@
-{"workers": {}, "models": [], "used_profiles": [], "start_time": null}
+{
+  "workers": {
+    "w_test0_0": {
+      "name": "w_test0_0",
+      "trainer": {
+        "name": "smelly",
+        "learning_rate": 0.01,
+        "momentum": 0.5,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test0.log",
+      "awake": true,
+      "woke_up": 1616213598
+    }
+  },
+  "models": [
+    {
+      "accuracy": 0.07354,
+      "worked_on": [
+        "w_test0_0",
+        "w_test0_0"
+      ],
+      "saved_in": "test0_2.pt"
+    },
+    {
+      "accuracy": 0.07468,
+      "worked_on": [
+        "w_test0_0",
+        "w_test0_0"
+      ],
+      "saved_in": "test0_1.pt"
+    },
+    {
+      "accuracy": 0.7328,
+      "worked_on": [
+        "w_test0_0"
+      ],
+      "saved_in": "test0_0.pt"
+    }
+  ],
+  "used_profiles": [
+    {
+      "name": "smelly",
+      "learning_rate": 0.01,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    }
+  ],
+  "start_time": 1616206013
+}
