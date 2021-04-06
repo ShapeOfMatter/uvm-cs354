@@ -1,0 +1,10 @@
+line one!
+line two!
+Submitted batch job 226428
+Using cache found in /users/m/p/mpbates/.cache/torch/hub/pytorch_vision_v0.6.0
+Using cache found in /users/m/p/mpbates/.cache/torch/hub/pytorch_vision_v0.6.0
+
+real	40m16.945s
+user	57m17.800s
+sys	9m39.414s
+line three!

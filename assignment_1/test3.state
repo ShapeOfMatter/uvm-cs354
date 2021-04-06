@@ -1,6 +1,414 @@
 {
-  "workers": {},
-  "models": [],
-  "used_profiles": [],
-  "start_time": null
+  "workers": {
+    "w_test3_0": {
+      "name": "w_test3_0",
+      "trainer": {
+        "name": "rachael",
+        "learning_rate": 0.0007,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616347062
+    },
+    "w_test3_1": {
+      "name": "w_test3_1",
+      "trainer": {
+        "name": "ron",
+        "learning_rate": 0.0001,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616448899
+    },
+    "w_test3_2": {
+      "name": "w_test3_2",
+      "trainer": {
+        "name": "ricky",
+        "learning_rate": 0.0001,
+        "momentum": 0.9,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616391352
+    },
+    "w_test3_3": {
+      "name": "w_test3_3",
+      "trainer": {
+        "name": "vince",
+        "learning_rate": 1e-05,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616437225
+    },
+    "w_test3_4": {
+      "name": "w_test3_4",
+      "trainer": {
+        "name": "vicky",
+        "learning_rate": 7e-05,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616406684
+    },
+    "w_test3_5": {
+      "name": "w_test3_5",
+      "trainer": {
+        "name": "vallary",
+        "learning_rate": 1e-05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616401881
+    },
+    "w_test3_6": {
+      "name": "w_test3_6",
+      "trainer": {
+        "name": "walter",
+        "learning_rate": 1e-06,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616434627
+    },
+    "w_test3_7": {
+      "name": "w_test3_7",
+      "trainer": {
+        "name": "walter",
+        "learning_rate": 1e-06,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616448702
+    },
+    "w_test3_8": {
+      "name": "w_test3_8",
+      "trainer": {
+        "name": "walter",
+        "learning_rate": 1e-06,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616442036
+    },
+    "w_test3_9": {
+      "name": "w_test3_9",
+      "trainer": {
+        "name": "walter",
+        "learning_rate": 1e-06,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test3.log",
+      "awake": true,
+      "woke_up": 1616447181
+    }
+  },
+  "models": [
+    {
+      "accuracy": 0.7192,
+      "worked_on": [
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_7"
+      ],
+      "saved_in": "test3_0.pt"
+    },
+    {
+      "accuracy": 0.7192,
+      "worked_on": [
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_7",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_9",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1"
+      ],
+      "saved_in": "test3_4.pt"
+    },
+    {
+      "accuracy": 0.7192,
+      "worked_on": [
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_7",
+        "w_test3_7",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9"
+      ],
+      "saved_in": "test3_3.pt"
+    },
+    {
+      "accuracy": 0.7192,
+      "worked_on": [
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_9",
+        "w_test3_1"
+      ],
+      "saved_in": "test3_2.pt"
+    },
+    {
+      "accuracy": 0.7192,
+      "worked_on": [
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_7",
+        "w_test3_9",
+        "w_test3_1",
+        "w_test3_1",
+        "w_test3_7"
+      ],
+      "saved_in": "test3_1.pt"
+    }
+  ],
+  "used_profiles": [
+    {
+      "name": "alex",
+      "learning_rate": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "alexa",
+      "learning_rate": 0.01,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "bond",
+      "learning_rate": 0.007,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "hank",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "handy",
+      "learning_rate": 0.007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "harrold",
+      "learning_rate": 0.001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ron",
+      "learning_rate": 0.0001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "rachael",
+      "learning_rate": 0.0007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ricky",
+      "learning_rate": 0.0001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vince",
+      "learning_rate": 1e-05,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vicky",
+      "learning_rate": 7e-05,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "vallary",
+      "learning_rate": 1e-05,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "walter",
+      "learning_rate": 1e-06,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    }
+  ],
+  "start_time": 1616264806
 }

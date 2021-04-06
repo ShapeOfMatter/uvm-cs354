@@ -1,6 +1,258 @@
 {
-  "workers": {},
-  "models": [],
-  "used_profiles": [],
-  "start_time": null
+  "workers": {
+    "w_test1_0": {
+      "name": "w_test1_0",
+      "trainer": {
+        "name": "rachael",
+        "learning_rate": 0.0007,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test1.log",
+      "awake": false,
+      "woke_up": 1616320624
+    },
+    "w_test1_1": {
+      "name": "w_test1_1",
+      "trainer": {
+        "name": "ron",
+        "learning_rate": 0.0001,
+        "momentum": 0.1,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test1.log",
+      "awake": true,
+      "woke_up": 1616276853
+    },
+    "w_test1_2": {
+      "name": "w_test1_2",
+      "trainer": {
+        "name": "ricky",
+        "learning_rate": 0.0001,
+        "momentum": 0.9,
+        "weight_decay": 0.0005
+      },
+      "log_file": "test1.log",
+      "awake": false,
+      "woke_up": 1616320398
+    }
+  },
+  "models": [
+    {
+      "accuracy": 0.5776,
+      "worked_on": [
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2"
+      ],
+      "saved_in": "test1_3.pt"
+    },
+    {
+      "accuracy": 0.5776,
+      "worked_on": [
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0"
+      ],
+      "saved_in": "test1_0.pt"
+    },
+    {
+      "accuracy": 0.5778,
+      "worked_on": [
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0"
+      ],
+      "saved_in": "test1_1.pt"
+    },
+    {
+      "accuracy": 0.5776,
+      "worked_on": [
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_0"
+      ],
+      "saved_in": "test1_4.pt"
+    },
+    {
+      "accuracy": 0.5776,
+      "worked_on": [
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0",
+        "w_test1_2",
+        "w_test1_0"
+      ],
+      "saved_in": "test1_2.pt"
+    }
+  ],
+  "used_profiles": [
+    {
+      "name": "alex",
+      "learning_rate": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "alexa",
+      "learning_rate": 0.01,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "bond",
+      "learning_rate": 0.007,
+      "momentum": 0.5,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "hank",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "handy",
+      "learning_rate": 0.007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "harrold",
+      "learning_rate": 0.001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ron",
+      "learning_rate": 0.0001,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "rachael",
+      "learning_rate": 0.0007,
+      "momentum": 0.1,
+      "weight_decay": 0.0005
+    },
+    {
+      "name": "ricky",
+      "learning_rate": 0.0001,
+      "momentum": 0.9,
+      "weight_decay": 0.0005
+    }
+  ],
+  "start_time": 1616247657
 }
