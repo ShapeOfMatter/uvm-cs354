@@ -30,11 +30,10 @@ class _Settings:
 class Settings(_Settings):
     name: str
     log_file: str
-    training_source: str
-    testing_source: str
+    training_file: str
+    test_file: str
     training_settings: 'TrainingSettings'
     model_settings: 'ModelSettings'
-    snippet_length: int
     total_lifetime: int
 
 @dataclass_json
@@ -43,11 +42,14 @@ class ModelSettings(_Settings):
     embedding_width: int = 64
     hidden_width: int = 300
     rnn_height: int = 5
+    nonlinear_function: str = 'relu'
+    dropout: float = 0.1
 
 @dataclass_json
 @dataclass(frozen=True)
 class TrainingSettings(_Settings):
-    batch_size: int
+    batch_size: int = 128
+    snippet_length: int = 100
     learning_rate: float = 1e-3
     beta_1: float = 0.9
     beta_2: float = 0.999

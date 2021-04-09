@@ -1,0 +1,23 @@
+{
+  "name": "first_try",
+  "log_file": "unused.log",
+  "training_file": "data/all.txt",
+  "test_file": "data/paths.txt",
+  "training_settings": {
+    "batch_size": 8,
+    "snippet_length": 10,
+    "learning_rate": 0.001,
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "epsilon": 1e-08,
+    "weight_decay": 0
+  },
+  "model_settings": {
+    "embedding_width": 16,
+    "hidden_width": 32,
+    "rnn_height": 1,
+    "nonlinear_function": "relu",
+    "dropout": 0.1
+  },
+  "total_lifetime": 600
+}

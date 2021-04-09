@@ -1,6 +1,6 @@
 from itertools import count
 import torch
-from torch.utils.data import DataLoader, IterableDataset
+from torch.utils.data import DataLoader
 from typing import Iterable
 
 from models import RNNModel
@@ -8,13 +8,11 @@ from state import TrainingSettings
 
 Criterion = torch.nn.Module  # lame.
 
-VERBOSITY = 10
+VERBOSITY = 1
 
-def make_dataloader(dataset: IterableDataset, batch_size: int):
-    return DataLoader(dataset, batch_size=batch_size)
-
-def test(model: RNNModel, dataloader: DataLoader, batch_size: int):
-    state = model.state_zero("sequence_length")  # MUTATES!
+def test(model: RNNModel, dataloader: DataLoader, settings: TrainingSettings):
+    model.eval()
+    state = model.state_zero(settings.snippet_length)  # MUTATES!
     total = 0
     correct = 0
     for (i, (input_i, output_i)) in enumerate(dataloader):
@@ -27,19 +25,17 @@ def test(model: RNNModel, dataloader: DataLoader, batch_size: int):
     return correct/total
 
 def train(epochs: Iterable[str],
-          training_data: IterableDataset,
-          test_data: IterableDataset,
+          training_data: DataLoader,
+          test_data: DataLoader,
           model: RNNModel,
           criterion: Criterion,
           optimizer: torch.optim.Optimizer,
           settings: TrainingSettings):
     model.train()
-    training_dataloader = make_dataloader(training_data, settings.batch_size)
-    test_dataloader = make_dataloader(test_data, settings.batch_size)
-
+    print(f'Training model {model.name}')
     for epoch_name in epochs:
-        state = model.state_zero("sequence_length")  # MUTATES!
-        for (i, (input_i, output_i)) in enumerate(training_dataloader):
+        state = model.state_zero(settings.snippet_length)  # MUTATES!
+        for (i, (input_i, output_i)) in enumerate(training_data):
             optimizer.zero_grad()
             guess_i, state = model(input_i, state)
             loss = criterion(guess_i.transpose(1, 2),  # why?
@@ -49,6 +45,6 @@ def train(epochs: Iterable[str],
             optimizer.step()
             if 0 == i % VERBOSITY:
                 print(f'  epoch: {epoch_name},  batch: {i},  loss: {loss.item()}')
-        accuracy = test(model, test_dataloader, settings.batch_size)
+        accuracy = test(model, test_data, settings)
         print(f'Epoch {epoch_name} finished with accuracy {accuracy}.')
         print()

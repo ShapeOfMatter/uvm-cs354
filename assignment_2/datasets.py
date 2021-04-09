@@ -1,6 +1,6 @@
 import numpy as np
 import torch
-from torch.utils.data import Dataset
+from torch.utils.data import DataLoader, Dataset
 from typing import Iterable
 
 def read_file(filename: str, chunk_size=4000) -> Iterable[int]:
@@ -12,7 +12,7 @@ def read_file(filename: str, chunk_size=4000) -> Iterable[int]:
                 return
 
 class SerialCharData(Dataset):
-    def __init__(self, snippet_length: int, source_filename: str):
+    def __init__(self, source_filename: str, snippet_length: int):
         self.snippet_length = snippet_length
         self.data = np.fromiter(read_file(source_filename), np.ubyte)
         self.wrap = np.concatenate((self.data[-(self.snippet_length + 1):],
@@ -25,5 +25,9 @@ class SerialCharData(Dataset):
         use_data, use_index = ((self.data, index)
                                if index + self.snippet_length + 1 < len(self.data)
                                else (self.wrap, index + self.sippet_length + 1 - len(self.data)))
-        return (torch.tensor(self.data[index : index + self.snippet_length]),
-                torch.tensor(self.data[index + 1 : index + self.snippet_length + 1]))
+        return (torch.tensor(use_data[use_index : use_index + self.snippet_length]),
+                torch.tensor(use_data[use_index + 1 : use_index + self.snippet_length + 1]))
+
+    def as_dataloader(self, batch_size: int):
+        return DataLoader(self, batch_size=batch_size, shuffle=True)
+
