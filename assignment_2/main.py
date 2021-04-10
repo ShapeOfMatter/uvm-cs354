@@ -41,6 +41,7 @@ def main(settings_filename: str):
           criterion=criterion,
           optimizer=optimizer,
           settings=training_settings)
+    torch.save(model.state_dict(), settings.model_filename)
 
 if __name__ == "__main__":
     main(sys.argv[1])

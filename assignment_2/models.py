@@ -18,11 +18,13 @@ class RNNModel(torch.nn.Module):
         self.judge = torch.nn.Linear(settings.hidden_width, ALPHABET_SIZE)
 
     def forward(self, input_i, state_i_minus1):
-        output_i, state_i = self.rnn(self.embed(input_i),
-                                     state_i_minus1)
+        output_i, state_i = self.rnn(self.embed(input_i), state_i_minus1)
         return self.judge(output_i), state_i
 
     def state_zero(self, length: int):
-        return (torch.zeros(self.rnn.num_layers, length, self.rnn.hidden_size),
-                torch.zeros(self.rnn.num_layers, length, self.rnn.hidden_size))
+        return torch.zeros(self.rnn.num_layers, length, self.rnn.hidden_size)
+               # torch.zeros(self.rnn.num_layers, length, self.rnn.hidden_size))
+
+    def detach_state(self, state):
+        return state.detach()
 

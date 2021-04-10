@@ -1,23 +1,24 @@
 {
   "name": "first_try",
   "log_file": "unused.log",
-  "training_file": "data/all.txt",
+  "model_filename": "first_try.pt",
+  "training_file": "data/small.txt",
   "test_file": "data/paths.txt",
   "training_settings": {
-    "batch_size": 8,
-    "snippet_length": 10,
-    "learning_rate": 0.001,
+    "batch_size": 32,
+    "snippet_length": 50,
+    "learning_rate": 0.002,
     "beta_1": 0.9,
     "beta_2": 0.999,
     "epsilon": 1e-08,
-    "weight_decay": 0
+    "weight_decay": 0.0001
   },
   "model_settings": {
-    "embedding_width": 16,
-    "hidden_width": 32,
-    "rnn_height": 1,
+    "embedding_width": 32,
+    "hidden_width": 64,
+    "rnn_height": 4,
     "nonlinear_function": "relu",
     "dropout": 0.1
   },
-  "total_lifetime": 600
+  "total_lifetime": 3600
 }

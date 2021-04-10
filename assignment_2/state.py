@@ -30,6 +30,7 @@ class _Settings:
 class Settings(_Settings):
     name: str
     log_file: str
+    model_filename:str
     training_file: str
     test_file: str
     training_settings: 'TrainingSettings'

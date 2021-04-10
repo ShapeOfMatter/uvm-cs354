@@ -21,12 +21,14 @@ class SerialCharData(Dataset):
     def __len__(self):
         return self.data.shape[0]
 
-    def __getitem__(self, index):
+    def __getitem__(self, index: int):
         use_data, use_index = ((self.data, index)
                                if index + self.snippet_length + 1 < len(self.data)
-                               else (self.wrap, index + self.sippet_length + 1 - len(self.data)))
-        return (torch.tensor(use_data[use_index : use_index + self.snippet_length]),
-                torch.tensor(use_data[use_index + 1 : use_index + self.snippet_length + 1]))
+                               else (self.wrap, index + self.snippet_length + 1 - len(self.data)))
+        def as_torch_ints(xs, start, length):  # transforming to ints may be pointless...
+            return torch.tensor([int(x) for x in xs[start : start + length]])
+        return (as_torch_ints(use_data, use_index, self.snippet_length),
+                as_torch_ints(use_data, use_index + 1, self.snippet_length))
 
     def as_dataloader(self, batch_size: int):
         return DataLoader(self, batch_size=batch_size, shuffle=True)

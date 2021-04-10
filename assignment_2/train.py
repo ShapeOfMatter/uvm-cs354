@@ -1,4 +1,5 @@
 from itertools import count
+from time import time
 import torch
 from torch.utils.data import DataLoader
 from typing import Iterable
@@ -8,7 +9,7 @@ from state import TrainingSettings
 
 Criterion = torch.nn.Module  # lame.
 
-VERBOSITY = 1
+VERBOSITY = 1000
 
 def test(model: RNNModel, dataloader: DataLoader, settings: TrainingSettings):
     model.eval()
@@ -40,11 +41,11 @@ def train(epochs: Iterable[str],
             guess_i, state = model(input_i, state)
             loss = criterion(guess_i.transpose(1, 2),  # why?
                              output_i)
-            # The tutorial says to detach state here, but I think it's wrong.
+            state = model.detach_state(state)  # why?
             loss.backward()
             optimizer.step()
             if 0 == i % VERBOSITY:
-                print(f'  epoch: {epoch_name},  batch: {i},  loss: {loss.item()}')
+                print(f'\tepoch: {epoch_name},\tbatch: {i},\tloss: {loss.item():.6}\t\t{int(time())}')
         accuracy = test(model, test_data, settings)
-        print(f'Epoch {epoch_name} finished with accuracy {accuracy}.')
+        print(f'Epoch {epoch_name} finished with accuracy {100 * accuracy:.8}%.')
         print()
