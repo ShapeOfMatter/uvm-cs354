@@ -15,5 +15,5 @@ def main(input_filename: str, output_filename: str):
                 output_file.write(scrubbed.encode('us-ascii', 'replace'))
 
 if __name__ == "__main__":
-    main("data/all.txt", "data/scrubbed.txt")
+    main("data/mt_speeches.raw.txt", "data/mt_scrubbed.txt")
 

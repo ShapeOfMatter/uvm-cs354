@@ -1,14 +1,14 @@
 {
-  "name": "second_try",
+  "name": "third_try",
   "log_file": "unused.log",
-  "model_filename": "second_try.pt",
-  "training_file": "data/stupid.txt",
-  "test_file": "data/stupid.txt",
+  "model_filename": "third_try.pt",
+  "training_file": "data/scrubbed.txt",
+  "test_file": "data/mt_scrubbed.txt",
   "training_settings": {
     "batch_size": 32,
-    "chunk_size": 32000,
+    "chunk_size": 96000,
     "snippet_length": 50,
-    "learning_rate": 0.002,
+    "learning_rate": 0.01,
     "beta_1": 0.9,
     "beta_2": 0.999,
     "epsilon": 1e-08,
@@ -21,6 +21,6 @@
     "nonlinear_function": "relu",
     "dropout": 0.1
   },
-  "total_lifetime": 3600,
+  "total_lifetime": 28800,
   "epoch_time": 600
 }

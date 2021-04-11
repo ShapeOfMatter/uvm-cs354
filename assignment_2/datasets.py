@@ -1,4 +1,5 @@
 import numpy as np
+import random  # I think this is good enough.
 import torch
 from torch.utils.data import DataLoader, Dataset
 from typing import Iterable
@@ -30,6 +31,23 @@ class SerialCharData(Dataset):
         return (as_torch_ints(use_data, use_index, self.snippet_length),
                 as_torch_ints(use_data, use_index + 1, self.snippet_length))
 
+    def get_dataloader(self, batch_size: int, book_size: int):
+        return DataSubSet(self, book_size, random.randrange(len(self))).as_dataloader(batch_size)
+
+class DataSubSet(Dataset):
+    def __init__(self, source: SerialCharData, size: int, offset: int):
+        self.source = source
+        self.source_size = len(source)
+        self.size = size
+        self.offset = offset
+        
+    def __len__(self):
+        return self.size
+
+    def __getitem__(self, index: int):
+        return self.source.__getitem__((self.offset + index) % self.source_size)
+
     def as_dataloader(self, batch_size: int):
         return DataLoader(self, batch_size=batch_size, shuffle=True)
+
 

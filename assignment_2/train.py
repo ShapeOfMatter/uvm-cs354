@@ -18,8 +18,10 @@ def test(model: RNNModel, dataloader: DataLoader, settings: TrainingSettings):
     correct = 0
     for (i, (input_i, output_i)) in enumerate(dataloader):
         guess_i, state = model(input_i, state)
-        total += guess_i.size()[0]
-        correct += sum([])  # TODO: figure this out.
+        total += guess_i.shape[0]
+        correct += sum((x == y).item()
+                       for (x, y)
+                       in zip(output_i.select(1, -1), guess_i.argmax(2).select(1, -1)))
         if 0 == i % VERBOSITY:
             print('.', end='')
     print()
@@ -46,6 +48,7 @@ def train(epochs: Iterable[str],
             optimizer.step()
             if 0 == i % VERBOSITY:
                 print(f'\tepoch: {epoch_name},\tbatch: {i},\tloss: {loss.item():.6}\t\t{int(time())}')
+        print(f'Model {model.name} has finished training epoch {epoch_name}.')
         accuracy = test(model, test_data, settings)
         print(f'Epoch {epoch_name} finished with accuracy {100 * accuracy:.8}%.')
         print()

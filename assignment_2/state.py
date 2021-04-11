@@ -36,6 +36,7 @@ class Settings(_Settings):
     training_settings: 'TrainingSettings'
     model_settings: 'ModelSettings'
     total_lifetime: int
+    epoch_time: int
 
 @dataclass_json
 @dataclass(frozen=True)
@@ -50,6 +51,7 @@ class ModelSettings(_Settings):
 @dataclass(frozen=True)
 class TrainingSettings(_Settings):
     batch_size: int = 128
+    chunk_size: int = 1000000
     snippet_length: int = 100
     learning_rate: float = 1e-3
     beta_1: float = 0.9
